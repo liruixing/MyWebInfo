@@ -1,0 +1,24 @@
+* { padding:0; margin:0; }
+
+body { font-size:12px; background:#000; font-family:"宋体"; }
+
+ul { list-style-type:none; }
+
+a { color:#fff; text-decoration:none; }
+
+.container { width:1024px; height:100px; margin:0 auto; padding-top:100px; }
+
+.menu { height:30px; line-height:30px; background:url(../image/bg1.png) repeat-x; }
+.menu li { float:left; position:relative; }
+.menu li a:hover { color:#000; background:url(../image/bg1.png);  }
+.menu li.focusa { background:url(../image/bg_focus.png); }
+.menu li a { display:block; float:left; height:30px; line-height:30px; padding:0 20px; }
+.menu li ul { position:absolute; left:0; background:url(../image/bg2.png); width:150px; border:1px solid #000; display:none; }
+.menu li ul a { width:110px; }
+.menu li ul.hdw { left:150px; }
+.menu li ul.hdwq { left:150px; }
+
+.one { border:1px solid #000; top:30px; }
+.one li a:hover { background:url(../image/bg1.png); }
+.one li a.more { background:url(../image/there.png) no-repeat 130px center; }
+.one li a.more:hover { background:url(../image/there.png) no-repeat 130px center; }

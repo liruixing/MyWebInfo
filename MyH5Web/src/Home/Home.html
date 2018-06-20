@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>首页</title>
+    <script src="../../js/jquery-3.3.1.js"></script>
+    <link href="../../css/menu.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu li').hover(function () {
+                $(this).children('ul').show();
+                $(this).focus().addClass('focusa')
+            }, function () {
+                $(this).children('ul').hide();
+                $(this).focus().removeClass('focusa')
+            });
+            DD_belatedPNG.fix('ul,.more');
+        });
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <ul class="menu">
+        <li><a href="#">H5基础知识</a>
+            <ul class="one">
+                <li><a href="../Function/Intent_page1.html">跳转</a></li>
+                <li><a href="#">Jquery语法</a></li>
+                <li><a href="#">网络请求</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
