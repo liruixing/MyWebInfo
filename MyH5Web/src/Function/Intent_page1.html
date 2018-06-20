@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/base.css" />
     <title>页面1</title>
+
+    <script type="text/javascript">
+        function intentToPage(w,obj){
+            let p = JSON.stringify(obj);
+            switch(w){
+                case 0:
+                    window.location.href="../Function/Intent_page2.html?parma="+p;
+                    break;
+                case 1:
+
+                    break;
+            }
+        }
+    </script>
+
 </head>
 <body>
-
+<div class="btn btn-info btn-sm base_btn" onclick="intentToPage(0,{name:'test',pwd:'123456'})">
+    GoToPage2
+</div>
+<div class="btn btn-info btn-sm base_btn" onclick="intentToPage(1,null)">
+    GoToPage2
+</div>
 </body>
 </html>
